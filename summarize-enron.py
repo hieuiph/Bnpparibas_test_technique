@@ -83,7 +83,6 @@ def get_result():
                          'received': recip_counts[n]} for n in all_person]
     counts_df = pd.DataFrame(name_counts_list)
     return counts_df.sort_values('sent', ascending=False)
-    df_result.to_csv('result.csv', index=False)
 
 
 def gen_person_activity(person_name):
